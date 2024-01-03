@@ -1,13 +1,27 @@
 
 
 import './App.css'
+import Blog from './Blog/Blog'
+import Blogs from './Blogs/Blogs'
+
+import Header from './Header/Header'
+
 
 function App() {
  
 
   return (
     <>
-       <h1>Hellow Bangladesh</h1>
+     
+     <Header></Header>
+
+     <div className='md:flex md:justify-between px-4'>
+      <Blogs></Blogs>
+      <Blog></Blog>
+     </div>
+   
+     
+      
     </>
   )
 }
